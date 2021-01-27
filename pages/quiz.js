@@ -24,7 +24,6 @@ export const QuizContainer = styled.div`
 export default function Home() {
 
   const router = useRouter();
-  const [name, setName] = React.useState('');
 
   return (
     <QuizBackground backgroundImage={db.bg}>
@@ -32,35 +31,13 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>{db.title}</h1>
+            <h1>1. Pergunta</h1>
           </Widget.Header>
           <Widget.Content>
-            <form onSubmit= { function(infosDoEvento) {
-                  infosDoEvento.preventDefault();
-                  router.push(`/quiz?name=${name}`)
-                  console.log({name});
-            }}
-            >
-              <input 
-                onChange={ function (infosDoEvento){
-                  setName(infosDoEvento.target.value);
-                }}
-                placeholder="Seu nome" 
-              />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar {name}
-              </button>
-            </form>
+            { router.query.name }
           </Widget.Content>
         </Widget>
 
-        <Widget>
-          <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
         <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/robertohorst" />

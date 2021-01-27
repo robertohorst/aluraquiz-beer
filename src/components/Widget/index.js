@@ -1,12 +1,10 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
-  }};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
   overflow: hidden;
 
@@ -46,6 +44,20 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+  input {
+    width: 100%;
+    margin-top: 14px;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 16px; 
+  }
+  button {
+    width: 100%;
+    margin-top: 14px;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 16px; 
   }
 `;
 
