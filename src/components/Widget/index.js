@@ -45,20 +45,25 @@ Widget.Content = styled.div`
     list-style: none;
     padding: 0;
   }
-  input {
-    width: 100%;
-    margin-top: 14px;
-    padding: 5px;
-    border-radius: 4px;
-    font-size: 16px; 
-  }
-  button {
-    width: 100%;
-    margin-top: 14px;
-    padding: 5px;
-    border-radius: 4px;
-    font-size: 16px; 
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
+
 
 export default Widget;
