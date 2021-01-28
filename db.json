@@ -8,7 +8,7 @@
         "image": "https://media.giphy.com/media/26gR1wYpogPiJQuwo/giphy.gif",
         "title": "Quais são os ingredientes básicos para uma cerveja?",
         "description": "Essa é pra aquecer",
-        "answer": 3,
+        "answer": 2,
         "alternatives": [
           "Água, malte e lúpulo",
           "Água, malte, trigo e lúpulo",
@@ -20,7 +20,7 @@
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
         "title": "Qual estilo é reconhecio por ser o primeiro criado no Brasil?",
         "description": "",
-        "answer": 2,
+        "answer": 1,
         "alternatives": [
           "Double IPA",
           "Catharina Sour",
@@ -32,7 +32,7 @@
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
         "title": "Qual pais é famoso pela revolução da cerveja artesanal?",
         "description": "Fácil de confundir",
-        "answer": 1,
+        "answer": 0,
         "alternatives": [
           "EUA",
           "Brasil",
